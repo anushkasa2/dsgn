@@ -1,2 +1,4 @@
 # dsgn
-For DSGN 1020, Art of the Web
+DSGN 1020, Art of the Web.
+
+Spring 2023
