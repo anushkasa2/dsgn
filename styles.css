@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    max-height: fit-content;
+}
+
+/* how do i set height/width limitations in this webpage */
+
+#screen video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+#top-bar {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#content {
+    width: inherit;
+    height: inherit;
+}
+
+figure {
+    position: absolute;
+    text-align: center;
+}
+
+.folder {
+    height: 5%;
+    max-height: 80px;
+}
+
+#folder1 {
+    left: 75%;
+    top: 60px;
+}
+
+#folder1:hover + #artist {
+    visibility: visible;
+}
+
+#artist {
+    visibility: hidden;
+    width: 300px;
+    height: 200px;
+    background-color: black;
+}
+
+#folder2 {
+    left: 80%;
+    top: 200px;
+}
+
+#student {
+    display: none;
+}
+
+#folder3 {
+    left: 5%;
+    top: 60px;
+}
+
+#myself {
+    display: none;
+}
+
+figcaption {
+    color: white;
+}
+
