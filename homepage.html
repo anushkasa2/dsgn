@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- is section or div better here -->
     <section id="screen">
         <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
             <source src="images/background_vid.mov" type="video/mp4">
@@ -11,20 +12,37 @@
         <div id="content">
             <figure id="folder1">
                 <img src="images/mac_folder.jpeg" class="folder"  />
-                <figcaption> responsibilities </figcaption>
+                <figcaption> as an artist </figcaption>
             </figure>
+            <div class="folder_open" id="artist">
+                <figure id="artwork">
+                    <img src="images/art.jpg"  />
+                    <figcaption> i like ink</figcaption>
+                </figure>
+            </div>
             <figure id="folder2">
                 <img src="images/mac_folder.jpeg" class="folder" />
-                <figcaption> background </figcaption>
+                <figcaption> as a student </figcaption>
             </figure>
+            <div class="folder_open" id="student">
+                <p> lol as a student </p>
+            </div>
             <figure id="folder3">
                 <img src="images/mac_folder.jpeg" class="folder" />
-                <figcaption> thoughts </figcaption>
+                <figcaption> as myself </figcaption>
             </figure>
+            <div class="folder_open" id="myself">
+                <p> lol as meeee </p>
+            </div>
         </div>
         <!-- replace image with a div with the icons placed -->
-        <!-- will be interesting to have actual time passing on the clock -->
-        <img src="images/header.png" id="top-bar"/>
+        <!-- will be interesting to have actual time passing on the clock // will need JS -->
+        <div id="top-bar">
+            <div id="clock">12:34:56</div>
+            <script src="clock.js"></script>
+            <img src="images/apple.png" id="apple"/>
+        </div>
+        <!-- <img src="images/header.png" /> -->
     </section>
 </body>
 </html>
