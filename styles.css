@@ -5,6 +5,7 @@ body {
     width: 1000px;
     height: 500px;
     overflow: hidden;
+    font-family:'Times New Roman', Times, serif;
 }
 
 /* Background Desktop Elements */
@@ -36,6 +37,28 @@ body {
     margin: 0;
 }
 
+#apple:hover + #settings {
+    display:block;
+}
+
+#settings:hover {
+    display:block;
+}
+
+#settings {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    top: 25px;
+    width: 180px;
+    padding: 5px;
+    text-align: left;
+    font-weight: 100;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
 #clock {
     position: absolute;
     margin-top: 6px;
@@ -47,30 +70,24 @@ body {
     height: inherit;
 }
 
-/* Draggable Folders Settings */
+/* All Draggable Folders
+
+folders: mac folder components
+folder_open: text boxes with information
+
+Goal: hover over desktop folder to reveal information
+
+*/
 
 figure {
     position: absolute;
     text-align: center;
-    /* cursor: move; */
+    cursor: move;
 }
 
 .folder {
     height: 5%;
     max-height: 80px;
-}
-
-.folder_open {
-    display: none;
-    position: absolute;
-    background-color: black;
-    color: white;
-    left: 25%;
-    top: 25%;
-    width: 220px;
-    height: 200px;
-    text-align: center;
-    overflow: hidden;
 }
 
 #folder1 {
@@ -80,11 +97,6 @@ figure {
 
 #folder1:hover + #artist {
     display:block;
-}
-
-#artist img {
-    position: relative;
-    max-height: 150px;
 }
 
 #folder2 {
@@ -103,6 +115,38 @@ figure {
 
 #folder3:hover + #myself {
     display:block;
+}
+
+.folder_open {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, .6);
+    color: white;
+    width: 220px;
+    height: 200px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 3%;
+}
+
+#artist {
+    left: 45%;
+    top: 25%;
+}
+
+#artist img {
+    position: relative;
+    max-height: 150px;
+}
+
+#student {
+    left: 45%;
+    top: 45%;
+}
+
+#myself {
+    left: 25%;
+    top: 25%;
 }
 
 figcaption {
