@@ -1,6 +1,7 @@
 setInterval(showTime, 1000);
 function showTime() {
     let time = new Date();
+    let day = time.getDay();
     let hour = time.getHours();
     let min = time.getMinutes();
     let sec = time.getSeconds();
@@ -21,7 +22,10 @@ function showTime() {
   
     let currentTime = hour + ":" 
             + min + ":" + sec + am_pm;
+
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    let date = weekday[day] + " " + currentTime;
   
-    document.getElementById("clock").innerHTML = currentTime;
+    document.getElementById("clock").innerHTML = date;
 }
 showTime();

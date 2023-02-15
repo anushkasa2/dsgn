@@ -6,7 +6,7 @@
 <body>
     <!-- is section or div better here -->
     <section id="screen">
-        <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+        <video id="background-video" autoplay loop muted>
             <source src="images/background_vid.mov" type="video/mp4">
         </video>
         <div id="content">
@@ -64,7 +64,29 @@
                 </table>
             </div>
         </div>
-        <!-- <img src="images/header.png" /> -->
-    </section>
-</body>
+        </section>
+        <img class="icons" id="finder" src="images/finder.png" />
+        <div class="popup" id="finder-popup">
+            <img src="images/finder_background.png">
+            <!-- PHOTOSHOP FINDER IMAGE!!!!!! -->
+        </div>
+        <img class="icons" id="messages" src="images/messages.png" />
+        <div class="popup" id="messages-popup">
+            <!-- PHOTOSHOP MESSAGES IMAGE!!!!!! -->
+        </div>
+        
+        <img class="icons" id="spotify" src="images/spotify.png" />
+        <div class="popup" id="spotify-popup">
+            <video id="spotify-video" autoplay loop muted>
+                <source src="images/spotify.mov" type="video/mp4">
+            </video>
+        </div>
+        <img class="icons"id="terminal" src="images/terminal.png" />
+        <div class="popup" id="terminal-popup">
+            <video id="terminal-video" autoplay loop muted>
+                <source src="images/terminal.mov" type="video/mp4">
+            </video>
+        </div>
+    </body>
+    <script src="scripts/display.js"></script>
 </html>
