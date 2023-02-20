@@ -7,7 +7,7 @@
     <!-- is section or div better here -->
     <section id="screen">
         <video id="background-video" autoplay loop muted>
-            <!-- <source src="images/background_vid.mov" type="video/mp4"> -->
+            <source src="images/background_vid.mov" type="video/mp4">
         </video>
         <div id="content">
             <figure id="folder1">
@@ -39,7 +39,7 @@
             <div class="folder_open" id="myself">
                 <img src="images/folder.png"  />
                 <figure id="random-image" class="image-display">
-                    <img class="jpg" src="images/loop.gif"/>
+                    <img id="loop-gif" class="jpg" src="images/loop.gif"/>
                     <figcaption class="folder-text"> the_end.jpg </figcaption>
                 </figure>
             </div>
@@ -76,8 +76,9 @@
         </section>
         <img class="icons" id="finder" src="images/finder.png" />
         <div class="popup" id="finder-popup">
-            <img src="images/finder_background.png">
-            <!-- PHOTOSHOP FINDER IMAGE!!!!!! -->
+            <video id="finder-video" autoplay loop muted>
+                <source src="images/finder_video.mov" type="video/mp4">
+            </video>
         </div>
         <img class="icons" id="spotify" src="images/spotify.png" />
         <div class="popup" id="spotify-popup">

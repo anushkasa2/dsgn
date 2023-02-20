@@ -186,34 +186,45 @@ figure {
     top: 25%;
 }
 
+#art-image img {
+    max-height: 100%;
+    width: auto;
+}
+
 #work-image {
     left: 25%;
     top: 20%;
-    height: 25%;
+    height: 20%;
 }
 
 #calendar-png {
     filter: blur(2px);
+    max-height: 100%;
+    width: auto;
 }
 
 #random-image {
     position: fixed;
     height: 100px;
-    width: 100px;
-    left: 45%;
-    top: 45%;
+    width: auto;
+    left: 35%;
+    top: 35%;
     transition: transform 10s; /* Animation */
-    max-height: 100vw;
     margin: 0 auto;
 }
 
 #random-image:hover {
-  transform: scale(4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  transform: scale(6);
+  max-height: 100vh;
+  max-width: 100vw; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+#loop-gif {
+    height: 100px;
 }
 
 .jpg {
-    max-height: 100%;
-    width: auto;
+    height: 100%;
 }
 
 .folder-text {
