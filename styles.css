@@ -6,10 +6,6 @@ body {
 
 /* Background Video */
 
-video {
-    background-color: green;
-}
-
 #screen video {
     position: fixed;
     top: 0;
