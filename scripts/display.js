@@ -1,7 +1,9 @@
 addListener("finder", "finder-popup")
-addListener("messages", "messages-popup")
 addListener("spotify", "spotify-popup")
 addListener("terminal", "terminal-popup")
+addListener("folder1", "artist")
+addListener("folder2", "work")
+addListener("folder3", "myself")
 
 function addListener(icon_id, window_id) {
 

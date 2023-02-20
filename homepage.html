@@ -7,32 +7,44 @@
     <!-- is section or div better here -->
     <section id="screen">
         <video id="background-video" autoplay loop muted>
-            <source src="images/background_vid.mov" type="video/mp4">
+            <!-- <source src="images/background_vid.mov" type="video/mp4"> -->
         </video>
         <div id="content">
             <figure id="folder1">
                 <img src="images/mac_folder.jpeg" class="folder"  />
-                <figcaption> as an artist </figcaption>
+                <figcaption class="folder-caption"> art </figcaption>
             </figure>
             <div class="folder_open" id="artist">
-                <figure id="artwork">
-                    <img src="images/art.jpg"  />
-                    <figcaption> i like ink</figcaption>
+                <img src="images/folder.png"  />
+                <figure id="art-image" class="image-display">
+                    <img class="jpg" src="images/art.jpg"/>
+                    <figcaption class="folder-text"> misc_homework.jpg </figcaption>
                 </figure>
             </div>
             <figure id="folder2">
                 <img src="images/mac_folder.jpeg" class="folder" />
-                <figcaption> as a student </figcaption>
+                <figcaption class="folder-caption"> work </figcaption>
             </figure>
-            <div class="folder_open" id="student">
-                <p> lol as a student </p>
+            <div class="folder_open" id="work">
+                <img src="images/folder.png"  />
+                <figure id="work-image" class="image-display">
+                    <img class="jpg" id="calendar-png" src="images/calendar.png"/>
+                    <figcaption class="folder-text"> ahhhhhhh.jpg </figcaption>
+                </figure>
             </div>
             <figure id="folder3">
                 <img src="images/mac_folder.jpeg" class="folder" />
-                <figcaption> as myself </figcaption>
+                <figcaption class="folder-caption"> random </figcaption>
             </figure>
             <div class="folder_open" id="myself">
-                <p> lol as meeee </p>
+                <img src="images/folder.png"  />
+                <figure id="random-image" class="image-display">
+                    <img class="jpg" src="images/loop.gif"/>
+                    <figcaption class="folder-text"> the_end.jpg </figcaption>
+                </figure>
+                <p>
+                    <button onclick="myMove()">Click Me</button> 
+                </p>
             </div>
         </div>
         <!-- replace image with a div with the icons placed -->
@@ -70,11 +82,6 @@
             <img src="images/finder_background.png">
             <!-- PHOTOSHOP FINDER IMAGE!!!!!! -->
         </div>
-        <img class="icons" id="messages" src="images/messages.png" />
-        <div class="popup" id="messages-popup">
-            <!-- PHOTOSHOP MESSAGES IMAGE!!!!!! -->
-        </div>
-        
         <img class="icons" id="spotify" src="images/spotify.png" />
         <div class="popup" id="spotify-popup">
             <video id="spotify-video" autoplay loop muted>

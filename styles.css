@@ -4,18 +4,24 @@ body {
     font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif; 
 }
 
-/* Background Desktop Elements */
+/* Background Video */
+
+video {
+    background-color: green;
+}
 
 #screen video {
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100vh;
+    min-width: 100vw;
     min-height: 75vw;
     width: 133.333333333vh;
     height: 100vh;
     object-fit: cover;
 }
+
+/* Top Bar Elements */
 
 #top-bar {
     position: fixed;
@@ -70,8 +76,7 @@ body {
     height: inherit;
 }
 
-
-/* Bottom Bar Styling */
+/* Bottom Bar and Pop Ups */
 
 .icons {
     position: fixed;
@@ -80,23 +85,22 @@ body {
     bottom: 0;
 }
 
-#finder {
-    left: 40vw;
+.icons img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-#messages {
-    left: 40vw;
-    margin-left: 60px;
+#finder {
+    left: 43vw;
 }
 
 #spotify {
-    left: 40vw;
-    margin-left: 115px;
+    left: 43vw;
+    margin-left: 60px;
 }
 
 #terminal {
-    left: 40vw;
-    margin-left: 170px;
+    left: 43vw;
+    margin-left: 115px;
 }
 
 .popup {
@@ -110,25 +114,18 @@ body {
 }
 
 .popup img {
-    height: 50vh;
+    width: 70vw;
     border-radius: 10px;
 }
 
 .popup video {
     object-fit: cover;
-    height: 50vh;
+    height: 70vh;
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-
-/* All Draggable Folders
-
-folders: mac folder components
-folder_open: text boxes with information
-
-Goal: hover over desktop folder to reveal information
-
-*/
+/* The Desktop Folders */
 
 figure {
     position: absolute;
@@ -146,17 +143,9 @@ figure {
     top: 60px;
 }
 
-#folder1:hover + #artist {
-    display:block;
-}
-
 #folder2 {
     left: 80%;
     top: 200px;
-}
-
-#folder2:hover + #student {
-    display:block;
 }
 
 #folder3 {
@@ -164,43 +153,70 @@ figure {
     top: 60px;
 }
 
-#folder3:hover + #myself {
-    display:block;
-}
-
 .folder_open {
     display: none;
     position: absolute;
-    background: rgba(0, 0, 0, .6);
     color: white;
-    width: 220px;
-    height: 200px;
+    left: 25%;
+    top: 25%;
     text-align: center;
     overflow: hidden;
     border-radius: 3%;
 }
 
-#artist {
-    left: 45%;
-    top: 25%;
+.folder_open img {
+    height: 300px;
 }
 
-#artist img {
-    position: relative;
-    max-height: 150px;
-}
-
-#student {
-    left: 45%;
-    top: 45%;
-}
-
-#myself {
-    left: 25%;
-    top: 25%;
-}
-
-figcaption {
+.folder-caption {
     color: white;
 }
 
+.image-display {
+    float: left;
+    position: absolute;
+    z-index: 1000;
+    height: 50%;
+    width: 30%;
+    box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+}
+
+#art-image {
+    left: 35%;
+    top: 25%;
+}
+
+#work-image {
+    left: 25%;
+    top: 20%;
+    height: 25%;
+}
+
+#calendar-png {
+    filter: blur(2px);
+}
+
+#random-image {
+    position: fixed;
+    height: 100px;
+    width: 100px;
+    left: 45%;
+    top: 45%;
+    transition: transform 10s; /* Animation */
+    max-height: 100vw;
+    margin: 0 auto;
+}
+
+#random-image:hover {
+  transform: scale(4); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.jpg {
+    max-height: 100%;
+    width: auto;
+}
+
+.folder-text {
+    color: black;
+    font-size: .55em;
+}
