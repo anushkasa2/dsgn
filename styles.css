@@ -4,6 +4,10 @@ body {
     font-family: Lucida Grande,Lucida Sans Unicode,Lucida Sans,Geneva,Verdana,sans-serif; 
 }
 
+a {
+    color: white;
+}
+
 /* Background Video */
 
 #screen video {
