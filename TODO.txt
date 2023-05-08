@@ -1,0 +1,44 @@
+- adjust the video for better screen sizing
+- make the location of the contents more dynamic
+- notes application on the bottom that is a scrollable window text box
+
+- maybe you click into the div 
+    - you can choose the reading response within it
+
+- collapsable sticky notes?
+
+
+- have the notes div top X button be the only way to close it
+- 
+
+ADD HOVER 'NOTES'
+
+
+S3final https://editor.p5js.org/anushkasa2/full/zo1BI0Ai8 
+- image will be saved text
+
+S32 https://anushkasa2.github.io/dsgn_s3_a2/homepage.html 
+- octopus is the image
+
+s31 https://anushkasa2.github.io/dsgn_s3_a1/index.html
+- screenshot of text
+
+s22 https://anushkasa2.github.io/dsgn_s2a2/html/view1.html
+- one of the posters
+
+S23 https://editor.p5js.org/anushkasa2/full/dIr7GjomB
+- time
+
+a12
+- https://codepen.io/anushkasa2/pen/KKBRNrN
+- still life image
+
+a11 https://codepen.io/anushkasa2/full/vYaWyWG 
+- disco
+
+a13
+-  https://anushkasa2.github.io/dsgn/homepage.html
+- desktop inception
+
+
+
